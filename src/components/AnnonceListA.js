@@ -150,6 +150,11 @@ export default function Apiclient2() {
               <h3>{article.title}</h3>
               <p>Price: {article.price}€</p>
             </div>
+            <div className="divov">
+               <h6 >{article.Name}</h6>
+                <h6>{article.email}</h6>
+                <button>Contact me</button>
+            </div>
           </div>
         ))}
       </div>
