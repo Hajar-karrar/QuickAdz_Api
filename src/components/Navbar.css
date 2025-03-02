@@ -1,0 +1,120 @@
+
+/* Navbar Container */
+.navbar {
+  background-color: transparent;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+}
+.darknav{
+background-color: transparent;
+padding: 10px 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+top: 0;
+}
+
+.img50{
+width: 20%;
+margin-left:-26px ;
+margin-top: 10px;
+}
+
+.img51{
+  width: 30%;
+  margin-left: 20px;
+}
+/* Nav Links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+/* Individual Link */
+.li {
+  text-decoration: none;
+  font-family: "Nunito", serif;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.darkLi{
+  text-decoration: none;
+  font-family: "Nunito", serif;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.darkLi:hover{
+  color: #6b6969;
+}
+.li:hover {
+  color: lightgray;
+}
+
+/* Search & Right Section 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+} */
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+/* Mobile Menu Toggle */
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-left: 98%;
+  margin-top: -40px;
+}
+
+.bar {
+  width: 25px;
+  height: 2px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+.bar2{
+  width: 25px;
+  height: 2px;
+  background-color: #333;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+    flex-direction: row;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    top: 60px;
+    text-align: end;
+    margin-left: -20px;
+    padding-left: 20px;
+  }
+
+  .navbar-menu.active {
+    display: flex;
+  }
+
+  .navbar-item {
+    margin: 0;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .navbar-toggle {
+    display: flex;
+  }
+}

@@ -1,0 +1,155 @@
+.containerr22 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  background-color: #333;
+}
+.bd{
+  background-color: #333;
+}
+/* Formulaire */
+.form-containerr22 {
+  background: white;
+  padding: 30px;
+  padding-top: 17px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 60%;
+  height: 550px;
+}
+
+/* Titre */
+.h2h2 {
+  text-align: center;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+/* Organisation en deux colonnes */
+.form-row {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 15px;
+}
+
+/* Chaque champ */
+.form-groupp1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.form-groupp2{
+  margin-top: 80px;
+  margin-left: -550px;
+  margin-right: 150px;
+  padding: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.form-groupp1 label, .form-groupp2 label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.form-groupp1 select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%;
+}
+.form-groupp1 input,
+.form-groupp1 textarea,
+.form-groupp2 input
+{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 95%;
+}
+
+/* Bouton */
+.submit-button {
+  width: 80%;
+  
+  background: linear-gradient(to right, #405e81, #243B55);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 7px;
+  margin-left: 10%;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.submit-button:hover {
+  background: linear-gradient(to right, #405e81, #243B55);
+  transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+  
+  .containerr22 {
+      margin-top: 10%;
+      padding: 0 10px;
+  }
+
+  .form-containerr22 {
+      width: 100%;
+      padding: 20px;
+      height: 878px;
+  }
+  .form-groupp2{
+    margin-top: -10px;
+    margin-left: 0px;
+  }
+   .form-groupp2 input{
+    width: 400px ;
+   }
+  .form-row {
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .submit-button {
+      width: 100%;
+      margin-left: 0;
+  }
+
+  .h2h2 {
+      font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-containerr22 {
+      padding: 15px;
+      height: 830px;
+  }
+
+  .h2h2 {
+      font-size: 24px;
+  }
+
+  .form-groupp1 label {
+      font-size: 14px;
+  }
+
+  .form-groupp1 input,
+  .form-groupp1 select,
+  .form-groupp1 textarea {
+      font-size: 12px;
+  }
+
+  .submit-button {
+      font-size: 16px;
+      padding: 10px
+   }
+}

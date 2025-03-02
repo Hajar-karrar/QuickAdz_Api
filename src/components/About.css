@@ -1,0 +1,214 @@
+.body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: whitesmoke;
+    background-color: #333;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    color: black;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contact-button {
+    padding: 10px 25px;
+    border: 2px solid #000;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
+.about-section h1 {
+    font-size: 120px;
+    font-weight: bold;
+    margin-left: 5%;
+    top: 0;
+    margin-top: 2%;
+}
+
+.car1{
+    margin-left: 4%;
+}
+.car1 p{
+    margin-left: 12%;
+    font-size: 16px;
+}
+.con{
+    display: flex;
+    justify-content: flex-start;
+}
+.imm{
+    width: 128%;
+    height: 95%;
+    margin-left: 8%;
+    border-radius: 30px;
+}
+.imm2{
+    width: 55%;
+    height: 50%;
+    border-radius: 35px;
+    margin-left: 28%;
+    margin-bottom: 2%;
+}
+.caption{
+    margin-left: 30%;
+}
+.coption h2{
+    font-weight: bold;
+    font-size: 20px;
+}
+.caption p{
+    font-size: 15px;
+    margin-top: 5%;
+    font-weight: normal;
+}
+
+
+
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .contact-button {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+
+    .about-section h1 {
+        font-size: 120px;
+        margin-left: 4%;
+    }
+    .con{
+        flex-direction: column;
+    }
+
+    .car1 {
+        margin-left: 5%;
+    }
+
+    .car1 p {
+        margin-left: 8%;
+    }
+
+    .imm {
+        width: 90%;
+        height: auto;
+        margin-left: 5%;
+        margin-bottom: 5%;
+    }
+
+    .imm2 {
+        width: 90%;
+        height: auto;
+        margin-left: 5%;
+    }
+
+    .caption {
+        margin-left: 5%;
+    }
+
+    .caption h2 {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .caption p {
+        font-size: 14px;
+    }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .contact-button {
+        font-size: 12px;
+        padding: 6px 15px;
+    }
+
+    .about-section h1 {
+        font-size: 80px;
+        margin-left: 2%;
+    }
+
+    .car1 {
+        margin-left: 2%;
+    }
+
+    .car1 p {
+        margin-left: 4%;
+        font-size: 12px;
+    }
+
+    .imm {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .imm2 {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 10%;
+    }
+
+    .caption {
+        margin-left: 2%;
+    }
+
+    .caption h2 {
+        font-size: 16px;
+    }
+
+    .caption p {
+        font-size: 12px;
+    }
+}

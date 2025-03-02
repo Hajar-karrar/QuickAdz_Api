@@ -1,0 +1,111 @@
+
+.product-container1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 15px;
+  }
+  
+  .product-card1 {
+    width: 293px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 15px;
+    
+  }
+  
+  .product-card1 img {
+    width: 100%;
+    height: 300px; /* Adjusted height for better proportions */
+    object-fit: cover; /* Ensures the image covers the area */
+    border-radius: 15px ; /* Rounded corners only at the top */
+  }
+  
+  .description1 {
+    padding: 15px;
+    background-color: #f1f4f8;
+    border-radius:15px; /* Rounded corners only at the bottom */
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .description1 h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #000;
+  }
+  
+  .description1 p {
+    margin: 10px 0; /* Adds spacing between elements */
+    font-size: 16px;
+    color: #000;
+  }
+  
+  .delete-button {
+    background-color: #73a68e;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px; /* Adjusted margin */
+    width: 170px; /* Makes the button full width */
+  }
+  
+  .delete-button:hover {
+    background-color: #739384;
+  }
+  .p22{
+    text-align: center;
+    
+  }
+  .h22{
+    text-align: center;
+    font-family: "Bowlby One SC", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  @media (min-width: 1440px) {
+    .product-container1 {
+      justify-content: center; 
+      gap: 30px; 
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1600px; 
+    }
+  
+    .product-card1 {
+      width: 320px; 
+    }
+  
+    .product-card1 img {
+      height: 350px; 
+    }
+  
+    .description1 {
+      padding: 20px; 
+    }
+  
+    .description1 h3 {
+      font-size: 20px; 
+    }
+  
+    .description1 p {
+      font-size: 18px;
+    }
+  
+    .delete-button {
+      width: 200px; 
+      font-size: 16px;
+      padding: 10px 15px;
+    }
+  
+    .h22 {
+      font-size: 32px; 
+    }
+  
+    .p22 {
+      font-size: 18px;
+    }
+  }
